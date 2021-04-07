@@ -3,4 +3,14 @@ ext {
            kotlin_version: "1.3.72",/*kotlin版本*/
            okhttp_version: "4.9.1",/*三方http库okhttp版本 当前 4.9.1 release版 发行时间：Jan 30, 2021*/
     ]
+    path = [/*路径*/
+            aliyun_debug_path: "https://packages.aliyun.com/maven/repository/2092623-snapshot-LVEZCP/",
+            aliyun_release_path: "https://packages.aliyun.com/maven/repository/2092623-release-1PGjQk/"
+    ]
+    nickname = [/*昵称*/
+                aliyun_name: "606d82189a5742c7751a38b8"
+    ]
+    password = [/*密码*/
+                aliyun_pwd: "7xJNeNnddByH"
+    ]
 }
