@@ -16,6 +16,23 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            credentials {
+                username '606d82189a5742c7751a38b8'
+                password '7xJNeNnddByH'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2092623-release-1PGjQk/'
+        }
+        maven {
+            credentials {
+                username '606d82189a5742c7751a38b8'
+                password '7xJNeNnddByH'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2092623-snapshot-LVEZCP/'
+        }
         google()
         jcenter()
     }
