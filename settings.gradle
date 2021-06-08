@@ -1,3 +1,4 @@
-include ':app'
-include(':library')
-project(':library').projectDir = file('../EmptyLibrary')
+include ':app', ':base'
+project(':base').setProjectDir(file('../PartyBase'))
+include ':library'
+project(':library').projectDir = file('../PartyOpengles')

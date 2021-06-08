@@ -5,5 +5,7 @@
     <mapping directory="$PROJECT_DIR$/../EmptyLibrary" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PartyBase" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PartyOpengles" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PartyPermission" vcs="Git" />
   </component>
 </project>

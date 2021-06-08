@@ -1,8 +1,8 @@
 package com.haochang.party.network.application
 
 import android.app.Application
-import com.haochang.network.client.HttpsClient
-import com.haochang.network.client.HttpsClientConfig
+//import com.haochang.network.client.HttpsClient
+//import com.haochang.network.client.HttpsClientConfig
 
 /**
  * @author: pandaren
@@ -25,8 +25,8 @@ class NetworkApplication : Application() {
         header["cli-mnc"] = ""
         header["cli-app"] = "ck"
         header["cli-app-pkg"] = packageName
-        HttpsClient().init(
+        /*HttpsClient().init(
             HttpsClientConfig.Builder(header).host("https://new-test-ck.haochang.tv/").build()
-        )
+        )*/
     }
 }
