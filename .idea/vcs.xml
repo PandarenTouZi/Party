@@ -5,7 +5,11 @@
     <mapping directory="$PROJECT_DIR$/../EmptyLibrary" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PartyBase" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PartyImage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PartyNetwork" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PartyOpengles" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PartyPermission" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PartyUtils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PartyViewComponent" vcs="Git" />
   </component>
 </project>

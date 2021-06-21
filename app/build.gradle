@@ -31,6 +31,12 @@ dependencies {
     implementation "androidx.appcompat:appcompat:${rootProject.ext.ver.androidx_compat}"
     implementation project(':library')
     implementation project(':base')
+    implementation project(':utils')
+    implementation project(':view')
+    implementation project(':image')
+    implementation project(':network')
+    implementation project(':permission')
+    implementation project(':opengl')
 
 //    implementation 'com.party:com.haochang.network:1.0.0'
     testImplementation 'junit:junit:4.12'

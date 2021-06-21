@@ -1,4 +1,14 @@
-include ':app', ':base'
+include ':base'
 project(':base').setProjectDir(file('../PartyBase'))
-include ':library'
-project(':library').projectDir = file('../PartyOpengles')
+include ':utils'
+project(':utils').setProjectDir(file('../PartyUtils'))
+include ':view'
+project(':view').setProjectDir(file('../PartyViewComponent'))
+include ':image'
+project(':image').projectDir = file('../PartyImage')
+include ':network'
+project(':network').projectDir = file('../PartyNetwork')
+include ':opengl'
+project(':opengl').projectDir = file('../PartyOpengles')
+include ':permission'
+project(':permission').projectDir = file('../PartyPermission')

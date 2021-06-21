@@ -12,7 +12,6 @@ import androidx.appcompat.widget.AppCompatTextView
 import com.haochang.base.listener.OnBaseClickListener
 import com.haochang.party.base.MainMVPActivity
 import com.haochang.party.gles.MainOpenGLESActivity
-import com.haochang.party.gles.MainOpenGLESPresenter
 import com.haochang.party.image.MainImageActivity
 import com.haochang.party.network.MainNetworkActivity
 import com.haochang.party.permission.MainPermissionActivity
