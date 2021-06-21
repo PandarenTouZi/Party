@@ -29,7 +29,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${rootProject.ext.ver.kotlin_version}"
     implementation "androidx.core:core-ktx:${rootProject.ext.ver.kotlin_core}"
     implementation "androidx.appcompat:appcompat:${rootProject.ext.ver.androidx_compat}"
-    implementation project(':library')
     implementation project(':base')
     implementation project(':utils')
     implementation project(':view')
