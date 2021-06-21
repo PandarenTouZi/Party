@@ -2,6 +2,7 @@ package com.haochang.party.gles
 
 import android.view.View
 import com.haochang.base.framework.mvp.activity.BaseActivityMVPActivity
+import com.haochang.party.R
 
 /**
  * @author: pandaren
@@ -9,6 +10,10 @@ import com.haochang.base.framework.mvp.activity.BaseActivityMVPActivity
  */
 class MainOpenGLESActivity : BaseActivityMVPActivity<MainOpenGLESPresenter>(),
     MainOpenGLESContract.IView {
+    override fun provideLayoutId(): Int {
+        return R.layout.layout_main_opengl
+    }
+
     override fun onInitView(rootView: View) {
 
     }

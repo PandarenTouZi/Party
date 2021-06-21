@@ -29,16 +29,28 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${rootProject.ext.ver.kotlin_version}"
     implementation "androidx.core:core-ktx:${rootProject.ext.ver.kotlin_core}"
     implementation "androidx.appcompat:appcompat:${rootProject.ext.ver.androidx_compat}"
-    implementation project(':base')
-    implementation project(':utils')
-    implementation project(':view')
-    implementation project(':image')
-    implementation project(':network')
-    implementation project(':permission')
-    implementation project(':opengl')
+//    implementation project(':base')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base}"
 
-//    implementation 'com.party:com.haochang.network:1.0.0'
-    testImplementation 'junit:junit:4.12'
+//    implementation project(':utils')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_utils}:${rootProject.ext.ver.library_utils}"
+
+//    implementation project(':view')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_view}:${rootProject.ext.ver.library_view}"
+
+//    implementation project(':image')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_image}:${rootProject.ext.ver.library_image}"
+
+//    implementation project(':network')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_network}:${rootProject.ext.ver.library_network}"
+
+//    implementation project(':permission')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_permission}:${rootProject.ext.ver.library_permission}"
+
+//    implementation project(':opengl')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_opengl}:${rootProject.ext.ver.library_opengl}"
+
+    testImplementation "junit:junit:${rootProject.ext.ver.junit}"
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
