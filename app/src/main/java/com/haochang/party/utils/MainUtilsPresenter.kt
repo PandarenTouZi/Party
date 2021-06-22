@@ -7,7 +7,7 @@ package com.haochang.party.utils
 class MainUtilsPresenter(view: MainUtilsContract.IView,
                          module: MainUtilsContract.IModule
 ) : MainUtilsContract.IPresenter(view, module) {
-    override fun onViewCreated() {
+    override fun onViewCreate() {
         
     }
 

@@ -7,7 +7,7 @@ package com.haochang.party.network
 class MainNetworkPresenter(view: MainNetworkContract.IView,
                            module: MainNetworkContract.IModule
 ) : MainNetworkContract.IPresenter(view, module) {
-    override fun onViewCreated() {
+    override fun onViewCreate() {
     }
 
     override fun onViewDestroy() {

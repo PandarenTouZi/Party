@@ -8,7 +8,7 @@ class MainOpenGLESPresenter(
     view: MainOpenGLESContract.IView,
     module: MainOpenGLESContract.IModule
 ) : MainOpenGLESContract.IPresenter(view, module) {
-    override fun onViewCreated() {
+    override fun onViewCreate() {
     }
 
     override fun onViewDestroy() {

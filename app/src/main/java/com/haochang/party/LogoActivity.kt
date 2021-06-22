@@ -62,7 +62,6 @@ class LogoActivity : AppCompatActivity() {
         }
         listView.adapter = adapter
         setContentView(listView)
-        println("LogoActivity.onCreate  ${listView.parent.javaClass}")
     }
 
     inner class ItemEntity(val text: String, val cls: Class<*>)

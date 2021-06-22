@@ -29,14 +29,14 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${rootProject.ext.ver.kotlin_version}"
     implementation "androidx.core:core-ktx:${rootProject.ext.ver.kotlin_core}"
     implementation "androidx.appcompat:appcompat:${rootProject.ext.ver.androidx_compat}"
-//    implementation project(':base')
-    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base}"
+    implementation project(':base')
+//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base}"
 
 //    implementation project(':utils')
     implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_utils}:${rootProject.ext.ver.library_utils}"
 
-//    implementation project(':view')
-    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_view}:${rootProject.ext.ver.library_view}"
+    implementation project(':view')
+//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_view}:${rootProject.ext.ver.library_view}"
 
 //    implementation project(':image')
     implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_image}:${rootProject.ext.ver.library_image}"

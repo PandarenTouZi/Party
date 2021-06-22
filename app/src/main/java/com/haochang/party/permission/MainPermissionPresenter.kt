@@ -9,7 +9,7 @@ class MainPermissionPresenter(view: MainPermissionContract.IView,
 ) : MainPermissionContract.IPresenter(
     view, module
 ) {
-    override fun onViewCreated() {
+    override fun onViewCreate() {
         
     }
 

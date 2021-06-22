@@ -23,5 +23,6 @@
         <activity android:name=".permission.MainPermissionActivity" />
         <activity android:name=".utils.MainUtilsActivity" />
         <activity android:name=".view.MainViewsActivity" />
+        <activity android:name=".view.text.scrolltext.ScrollTextViewActivity" />
     </application>
 </manifest>

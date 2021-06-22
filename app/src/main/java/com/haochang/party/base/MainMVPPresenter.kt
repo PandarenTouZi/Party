@@ -8,7 +8,7 @@ class MainMVPPresenter(view: MainMVPContract.IView,
                        module: MainMVPContract.IModule
 ) : MainMVPContract.IPresenter(view, module) {
 
-    override fun onViewCreated() {
+    override fun onViewCreate() {
 
     }
 
