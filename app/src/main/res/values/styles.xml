@@ -7,6 +7,20 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <!--        <item name="android:windowEnterAnimation">@anim/activity_left_in</item>-->
+        <!--        <item name="android:windowExitAnimation">@anim/activity_right_out</item>-->
+        <item name="android:windowAnimationStyle">@style/ActivityAnimationStyle</item>
+    </style>
+    <!--修改动画后需要卸载重新安装包才能看到修改后的效果-->
+    <style name="ActivityAnimationStyle" parent="@android:style/Animation.Activity">
+        <!--被打开的页面进入-->
+        <item name="android:activityOpenEnterAnimation">@anim/activity_left_in</item>
+        <!--打开页面退出-->
+        <item name="android:activityOpenExitAnimation">@anim/activity_right_out</item>
+        <!--关闭页面退出-->
+        <item name="android:activityCloseEnterAnimation">@anim/activity_right_in</item>
+        <!--关闭页面后自动显示的页面-->
+        <item name="android:activityCloseExitAnimation">@anim/activity_left_out</item>
     </style>
 
 </resources>

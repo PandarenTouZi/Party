@@ -3,6 +3,8 @@ package com.haochang.party.gles
 import android.content.Intent
 import android.text.TextUtils
 import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -23,6 +25,14 @@ class MainOpenGLESActivity : BaseActivityMVPActivity<MainOpenGLESPresenter>(),
     }
 
     override fun onInitView(rootView: View) {
+        val rootViewGroup: ViewGroup? = null
+        val inflateView = layoutInflater.inflate(R.layout.include_common_title, rootViewGroup)
+        inflateView.findViewById<View>(R.id.includeCommonTitleIvBack).setOnClickListener {
+            finish()
+        }
+        inflateView.findViewById<TextView>(R.id.includeCommonTitleTvTitle).text = "GLES功能列表"
+        provideNormalTitleTop(inflateView)
+
         val recyclerView = rootView.findViewById<RecyclerView>(R.id.mainViewsActivity_recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         val viewList = arrayOf(
