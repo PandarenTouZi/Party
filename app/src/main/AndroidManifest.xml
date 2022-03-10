@@ -1,8 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.haochang.party">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,5 +25,7 @@
         <activity android:name=".utils.MainUtilsActivity" />
         <activity android:name=".view.MainViewsActivity" />
         <activity android:name=".view.text.scrolltext.ScrollTextViewActivity" />
+        <activity android:name=".view.scroll.ScrollTwoPageActivity" />
+        <activity android:name=".gles.learn.LearnOpenGLESActivity" />
     </application>
 </manifest>

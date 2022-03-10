@@ -20,4 +20,8 @@ class MainNetworkActivity : BaseActivityMVPActivity<MainNetworkPresenter>(),
 
     override fun onInitView(rootView: View) {
     }
+
+    override fun onPostResume() {
+        super.onPostResume()
+    }
 }

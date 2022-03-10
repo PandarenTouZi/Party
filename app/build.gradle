@@ -22,6 +22,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -32,8 +37,8 @@ dependencies {
     implementation project(':base')
 //    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base}"
 
-//    implementation project(':utils')
-    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_utils}:${rootProject.ext.ver.library_utils}"
+    implementation project(':utils')
+//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_utils}:${rootProject.ext.ver.library_utils}"
 
     implementation project(':view')
 //    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_view}:${rootProject.ext.ver.library_view}"
@@ -47,8 +52,8 @@ dependencies {
 //    implementation project(':permission')
     implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_permission}:${rootProject.ext.ver.library_permission}"
 
-//    implementation project(':opengl')
-    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_opengl}:${rootProject.ext.ver.library_opengl}"
+    implementation project(':opengl')
+//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_opengl}:${rootProject.ext.ver.library_opengl}"
 
     testImplementation "junit:junit:${rootProject.ext.ver.junit}"
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

@@ -4,10 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.haochang.view.view.ScrollTextView
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@color/colorPrimary"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/includeCommonTitleIvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

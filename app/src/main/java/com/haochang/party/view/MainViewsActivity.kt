@@ -12,7 +12,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.haochang.base.framework.mvp.activity.BaseActivityMVPActivity
 import com.haochang.base.listener.OnBaseClickListener
 import com.haochang.party.R
+import com.haochang.party.view.scroll.ScrollTwoPageActivity
 import com.haochang.party.view.text.scrolltext.ScrollTextViewActivity
+import com.haochang.utils.TraceUtils
 
 /**
  * @author: pandaren
@@ -30,7 +32,10 @@ class MainViewsActivity : BaseActivityMVPActivity<MainViewsPresenter>(), MainVie
     override fun onInitView(rootView: View) {
         val recyclerView = rootView.findViewById<RecyclerView>(R.id.mainViewsActivity_recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-        val viewList = arrayOf(ItemEntity("滑动TextView", ScrollTextViewActivity::class.java))
+        val viewList = arrayOf(
+            ItemEntity("滑动TextView", ScrollTextViewActivity::class.java),
+            ItemEntity("滑动页面", ScrollTwoPageActivity::class.java),
+        )
         recyclerView.adapter = StringListAdapter(viewList, object :
             DiffUtil.ItemCallback<String>() {
             override fun areItemsTheSame(oldItem: String, newItem: String): Boolean {
@@ -45,6 +50,7 @@ class MainViewsActivity : BaseActivityMVPActivity<MainViewsPresenter>(), MainVie
                 startActivity(Intent(this@MainViewsActivity, itemEntity.cls))
             }
         })
+        println("MainViewsActivity.onInitView --- ${TraceUtils.trace()}")
     }
 }
 
@@ -71,7 +77,9 @@ class StringListAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        return ListViewHolder(TextView(parent.context))
+        val itemView = TextView(parent.context)
+        itemView.setPadding(100, 10, 100, 10)
+        return ListViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
