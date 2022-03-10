@@ -1,14 +1,17 @@
 package com.haochang.party
 
 import android.content.Intent
-import android.os.Bundle
+import android.graphics.Color
 import android.view.Gravity
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ListView
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.TextView
 import androidx.appcompat.widget.AppCompatTextView
+import com.haochang.base.framework.mvp.AbsMVPContract
+import com.haochang.base.framework.mvp.activity.BaseActivityMVPActivity
 import com.haochang.base.listener.OnBaseClickListener
 import com.haochang.party.base.MainMVPActivity
 import com.haochang.party.gles.MainOpenGLESActivity
@@ -23,9 +26,27 @@ import com.haochang.party.view.MainViewsActivity
  * @createTime: 2021/4/2
  * main logo
  */
-class LogoActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+class LogoActivity : BaseActivityMVPActivity<AbsMVPContract.IPresenter<*, *>>() {
+    override fun provideLayoutId(): Int {
+        return 0
+    }
+
+    override fun onInitView(rootView: View) {
+        val viewParent: ViewGroup? = null
+        val inflateView =
+            LayoutInflater.from(this).inflate(R.layout.include_common_title, viewParent)
+        inflateView.findViewById<View>(R.id.includeCommonTitleIvBack).setOnClickListener {
+            finish()
+        }
+        inflateView.findViewById<TextView>(R.id.includeCommonTitleTvTitle).text = "测试功能列表"
+        provideNormalTitleTop(inflateView)
+    }
+
+    override fun onInitMVPContract(): AbsMVPContract.IPresenter<*, *>? {
+        return null
+    }
+
+    override fun provideContentView(): View {
         val functionList = arrayListOf(
             ItemEntity("网络", MainNetworkActivity::class.java),
             ItemEntity("权限", MainPermissionActivity::class.java),
@@ -61,7 +82,8 @@ class LogoActivity : AppCompatActivity() {
             }
         }
         listView.adapter = adapter
-        setContentView(listView)
+        listView.setBackgroundColor(Color.TRANSPARENT)
+        return listView
     }
 
     inner class ItemEntity(val text: String, val cls: Class<*>)

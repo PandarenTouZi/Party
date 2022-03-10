@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/includeCommonTitleIvBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:padding="16dp"
         android:scaleType="fitCenter"
-        android:src=""
+        android:src="@mipmap/public_return"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.haochang.view.view.BaseTextView
+        android:id="@+id/includeCommonTitleTvTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingStart="0dp"
+        android:paddingEnd="50dp"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/includeCommonTitleIvBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/includeCommonTitleIvBack"
+        app:layout_constraintTop_toTopOf="@id/includeCommonTitleIvBack"
+        tools:text="@string/app_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
