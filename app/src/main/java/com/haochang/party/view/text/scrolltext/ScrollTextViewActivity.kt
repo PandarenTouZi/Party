@@ -20,6 +20,11 @@ class ScrollTextViewActivity : BaseActivityMVPActivity<ScrollTextViewPresenter>(
     }
 
     override fun onInitView(rootView: View) {
-
+        rootView.findViewById<View>(R.id.scrollTextView_tvTextView).setOnClickListener(object :
+            View.OnClickListener {
+            override fun onClick(v: View?) {
+                println("ScrollTextViewActivity.onClick")
+            }
+        })
     }
 }

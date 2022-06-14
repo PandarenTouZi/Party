@@ -16,6 +16,7 @@ ext {
            library_network     : "1.0.1",/*network*/
            library_permission  : "1.0.0",/*permission*/
            library_opengl      : "1.0.0",/*opengl*/
+           library_audio       : "1.0.0",/*audio*/
     ]
     packageName = [
             library_base        : "com.haochang.base",/*base*/
@@ -25,6 +26,7 @@ ext {
             library_network     : "com.haochang.network",/*network*/
             library_permission  : "com.haochang.permission",/*permission*/
             library_opengl      : "com.haochang.opengl",/*opengl*/
+            library_audio       : "com.haochang.audio",/*audio*/
     ]
     groupName = [
             library             : "com.party",

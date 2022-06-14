@@ -55,6 +55,9 @@ dependencies {
     implementation project(':opengl')
 //    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_opengl}:${rootProject.ext.ver.library_opengl}"
 
+    implementation project(':audio')
+//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_audio}:${rootProject.ext.ver.library_audio}"
+
     testImplementation "junit:junit:${rootProject.ext.ver.junit}"
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

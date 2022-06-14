@@ -14,4 +14,18 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    open class Base {
+        private var name: String = ""
+        private var stage: String = ""
+    }
+
+    @Test
+    fun testObjectProperty() {
+        val base = object : Base() {
+            var age: Int = 100
+        }
+        val base1 = Base()
+        println("ExampleUnitTest.testObjectProperty  ${base1::class.java}  ${base::class.java}  ${base.age}")
+    }
 }

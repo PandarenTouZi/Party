@@ -13,3 +13,5 @@ include ':opengl'
 project(':opengl').projectDir = file('../PartyOpengles')
 include ':permission'
 project(':permission').projectDir = file('../PartyPermission')
+include ':audio'
+project(':audio').projectDir = file('../Audio')
