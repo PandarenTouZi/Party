@@ -28,4 +28,25 @@ class ExampleUnitTest {
         val base1 = Base()
         println("ExampleUnitTest.testObjectProperty  ${base1::class.java}  ${base::class.java}  ${base.age}")
     }
+
+    @Test
+    fun kotlinEqual() {
+        val a = setOf("Ssahakespeare", "Hemingway", "Twadin")
+        val b = setOf("Twadin", "Ssahakespeare", "Hemingway")
+        //值比较
+        println(a == b)
+        //引用比较
+        println(a === b)
+        val map = mutableMapOf<String, String?>()
+        map["dd"] = "32478"
+        map["dd"] = null
+        map.getOrElse("dd", {"ddd"})
+
+
+        val authors = setOf("Shakespeare", "Hemingway", "Twain")
+        val writers = setOf("Twain", "Shakespeare", "Hemingway")
+
+        println(authors == writers)   // 1
+        println(authors === writers)  // 2
+    }
 }
