@@ -1,17 +1,18 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-parcelize'
 
+def ver = rootProject.ext.ver
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion rootProject.ext.version.compileSdkVersion
+    buildToolsVersion "${rootProject.ext.version.buildToolsVersion}"
 
     defaultConfig {
         applicationId "com.haochang.party.demo"
-        minSdkVersion 23
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.ext.version.minSdkVersion
+        targetSdkVersion rootProject.ext.version.targetSdkVersion
+        versionCode ver.app_code
+        versionName ver.app_name
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -59,7 +60,7 @@ dependencies {
 //    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_audio}:${rootProject.ext.ver.library_audio}"
 
     testImplementation "junit:junit:${rootProject.ext.ver.junit}"
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
 }
