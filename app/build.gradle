@@ -25,8 +25,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility 1.8
-        targetCompatibility 1.8
+        sourceCompatibility 11
+        targetCompatibility 11
     }
 }
 
@@ -35,29 +35,29 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${rootProject.ext.ver.kotlin_version}"
     implementation "androidx.core:core-ktx:${rootProject.ext.ver.kotlin_core}"
     implementation "androidx.appcompat:appcompat:${rootProject.ext.ver.androidx_compat}"
-    implementation project(':base')
-//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base}"
+//    implementation project(':base')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base_name}"
 
-    implementation project(':utils')
-//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_utils}:${rootProject.ext.ver.library_utils}"
+//    implementation project(':utils')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_utils}:${rootProject.ext.ver.library_utils_name}"
 
-    implementation project(':view')
-//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_view}:${rootProject.ext.ver.library_view}"
+//    implementation project(':view')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_view}:${rootProject.ext.ver.library_view_name}"
 
 //    implementation project(':image')
-    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_image}:${rootProject.ext.ver.library_image}"
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_image}:${rootProject.ext.ver.library_image_name}"
 
 //    implementation project(':network')
-    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_network}:${rootProject.ext.ver.library_network}"
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_network}:${rootProject.ext.ver.library_network_name}"
 
 //    implementation project(':permission')
-    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_permission}:${rootProject.ext.ver.library_permission}"
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_permission}:${rootProject.ext.ver.library_permission_name}"
 
-    implementation project(':opengl')
-//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_opengl}:${rootProject.ext.ver.library_opengl}"
+//    implementation project(':opengl')
+    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_opengl}:${rootProject.ext.ver.library_opengl_name}"
 
     implementation project(':audio')
-//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_audio}:${rootProject.ext.ver.library_audio}"
+//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_audio}:${rootProject.ext.ver.library_audio_name}"
 
     testImplementation "junit:junit:${rootProject.ext.ver.junit}"
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
