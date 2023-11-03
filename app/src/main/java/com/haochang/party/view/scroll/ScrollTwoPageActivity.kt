@@ -45,12 +45,15 @@ class ScrollTwoPageActivity : BaseActivity() {
                 }
 
                 override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
-                    if (holder.itemView is TextView)
-                        holder.itemView.text = list!![position]
+                    holder.itemView.apply {
+                        if (this is TextView) {
+                            this.text = list[position]
+                        }
+                    }
                 }
 
                 override fun getItemCount(): Int {
-                    return list?.size ?: 0
+                    return list.size ?: 0
                 }
             }
             recyclerView?.adapter = value

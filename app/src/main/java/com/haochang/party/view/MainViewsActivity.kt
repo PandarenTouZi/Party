@@ -83,10 +83,13 @@ class StringListAdapter(
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        if (holder.itemView is TextView) {
-            holder.itemView.text = listData!![position].text
-            holder.itemView.tag = position
-            holder.itemView.setOnClickListener(onBaseClickListener)
+        holder.itemView.apply {
+            val itemView = this
+            if (itemView is TextView) {
+                itemView.text = listData!![position].text
+                itemView.tag = position
+                itemView.setOnClickListener(onBaseClickListener)
+            }
         }
     }
 

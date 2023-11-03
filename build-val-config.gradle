@@ -1,13 +1,14 @@
 ext {
     ver = [/*版本号定义*/
-           kotlin_version         : "1.5.20"/*"1.3.72"*/,/*kotlin版本*/
-           kotlin_core            : "1.6.0"/*"1.3.2"*/,/*androidx.core:core-ktx版本*/
-           androidx_compat        : "1.4.0-alpha03"/*"1.3.0-rc01"*/,/*androidx.appcompat版本*/
+           kotlin_version         : "1.7.10"/*"1.3.72"*/,/*kotlin版本*/
+           kotlin_core            : "1.9.0"/*"1.3.2"*/,/*androidx.core:core-ktx版本*/
+           androidx_compat        : "1.7.0-alpha03"/*"1.3.0-rc01"*/,/*androidx.appcompat版本*/
            okhttp_version         : "4.9.1",/*三方http库okhttp版本 当前 4.9.1 release版 发行时间：Jan 30, 2021*/
-           build_gradle_version   : '7.3.1',/*com.android.tools.build:gradle*/
-           androidx_constraint    : "2.0.4",/*constraintLayout*/
+           build_gradle_version   : '7.4.1',/*com.android.tools.build:gradle*/
+           androidx_coordinator   : "1.2.0",/*coordinatorlayout*/
+           androidx_constraint    : "2.1.4",/*constraintLayout*/
            androidx_recycler      : "1.2.1",/*recyclerView*/
-           android_material       : "1.5.0-alpha01",/*android.material*/
+           android_material       : "1.10.0",/*android.material*/
            junit                  : "4.13.2",/*junit-test*/
            android_junit          : "1.1.5",/*junit-androidTest*/
            app_code               : 1,/*app*/
@@ -36,14 +37,14 @@ ext {
             targetSdkVersion : 34,/**/
     ]
     packageName = [
-            library_base      : "base",/*base*/
-            library_utils     : "utils",/*utils*/
-            library_view      : "view",/*view*/
-            library_image     : "image",/*image*/
-            library_network   : "network",/*network*/
-            library_permission: "permission",/*permission*/
-            library_opengl    : "opengl",/*opengl*/
-            library_audio     : "audio",/*audio*/
+            library_base      : "com.haochang.base",/*base*/
+            library_utils     : "com.haochang.utils",/*utils*/
+            library_view      : "com.haochang.view",/*view*/
+            library_image     : "com.haochang.image",/*image*/
+            library_network   : "com.haochang.network",/*network*/
+            library_permission: "com.haochang.permission",/*permission*/
+            library_opengl    : "com.haochang.opengl",/*opengl*/
+            library_audio     : "com.haochang.audio",/*audio*/
     ]
     groupName = [
             library: "com.party",
