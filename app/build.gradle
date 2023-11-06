@@ -68,6 +68,9 @@ dependencies {
     implementation project(':audio')
 //    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_audio}:${rootProject.ext.ver.library_audio_name}"
 
+    implementation project(':video')
+//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_video}:${rootProject.ext.ver.library_video_name}"
+
     testImplementation "junit:junit:${rootProject.ext.ver.junit}"
     androidTestImplementation "androidx.test.ext:junit:${rootProject.ext.ver.android_junit}"
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

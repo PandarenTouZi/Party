@@ -29,6 +29,8 @@ ext {
            library_opengl_name    : "1.0.0",/*opengl*/
            library_audio_code     : 1,/*audio*/
            library_audio_name     : "1.0.0",/*audio*/
+           library_video_code     : 1,/*video*/
+           library_video_name     : "1.0.0",/*video*/
     ]
     version = [
             compileSdkVersion: 34,/**/
@@ -45,6 +47,7 @@ ext {
             library_permission: "com.haochang.permission",/*permission*/
             library_opengl    : "com.haochang.opengl",/*opengl*/
             library_audio     : "com.haochang.audio",/*audio*/
+            library_video     : "com.haochang.video",/*video*/
     ]
     groupName = [
             library: "com.party",
