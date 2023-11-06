@@ -11,6 +11,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/../Audio" />
+            <option value="$PROJECT_DIR$/../EmptyLibrary" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/../PartyBase" />
@@ -19,6 +20,7 @@
             <option value="$PROJECT_DIR$/../PartyOpengles" />
             <option value="$PROJECT_DIR$/../PartyPermission" />
             <option value="$PROJECT_DIR$/../PartyUtils" />
+            <option value="$PROJECT_DIR$/../PartyVideo" />
             <option value="$PROJECT_DIR$/../PartyViewComponent" />
           </set>
         </option>

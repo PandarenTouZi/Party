@@ -13,6 +13,7 @@ import androidx.appcompat.widget.AppCompatTextView
 import com.haochang.base.framework.mvp.AbsMVPContract
 import com.haochang.base.framework.mvp.activity.BaseActivityMVPActivity
 import com.haochang.base.listener.OnBaseClickListener
+import com.haochang.party.audio.MainAudioMVPActivity
 import com.haochang.party.base.MainMVPActivity
 import com.haochang.party.gles.MainOpenGLESActivity
 import com.haochang.party.image.MainImageActivity
@@ -48,6 +49,7 @@ class LogoActivity : BaseActivityMVPActivity<AbsMVPContract.IPresenter<*, *>>() 
 
     override fun provideContentView(): View {
         val functionList = arrayListOf(
+            ItemEntity("音频", MainAudioMVPActivity::class.java),
             ItemEntity("网络", MainNetworkActivity::class.java),
             ItemEntity("权限", MainPermissionActivity::class.java),
             ItemEntity("页面视图", MainMVPActivity::class.java),

@@ -15,3 +15,7 @@ include ':permission'
 project(':permission').projectDir = file('../PartyPermission')
 include ':audio'
 project(':audio').projectDir = file('../Audio')
+include ':video'
+project(':video').projectDir = file('../PartyVideo')
+include ':empty'
+project(':empty').projectDir = file('../EmptyLibrary')

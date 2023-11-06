@@ -11,6 +11,7 @@
     <mapping directory="$PROJECT_DIR$/../PartyOpengles" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PartyPermission" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PartyUtils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PartyVideo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PartyViewComponent" vcs="Git" />
   </component>
 </project>

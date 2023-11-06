@@ -43,8 +43,8 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:${rootProject.ext.ver.androidx_constraint}"
     implementation "androidx.coordinatorlayout:coordinatorlayout:${rootProject.ext.ver.androidx_coordinator}"
     implementation "com.google.android.material:material:${rootProject.ext.ver.android_material}"
-//    implementation project(':base')
-    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base_name}"
+    implementation project(':base')
+//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base_name}"
 //    println("======================== ${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base_name}")
 
 //    implementation project(':utils')
@@ -65,9 +65,8 @@ dependencies {
 //    implementation project(':opengl')
     implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_opengl}:${rootProject.ext.ver.library_opengl_name}"
 
-//    implementation project(':audio')
-    println("============================${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_audio}:${rootProject.ext.ver.library_audio_name}")
-    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_audio}:${rootProject.ext.ver.library_audio_name}"
+    implementation project(':audio')
+//    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_audio}:${rootProject.ext.ver.library_audio_name}"
 
     testImplementation "junit:junit:${rootProject.ext.ver.junit}"
     androidTestImplementation "androidx.test.ext:junit:${rootProject.ext.ver.android_junit}"

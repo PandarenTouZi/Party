@@ -8,7 +8,7 @@ import com.haochang.base.framework.mvp.activity.BaseActivityMVPContract
  */
 class MainMVPContract : BaseActivityMVPContract {
     interface IView : BaseActivityMVPContract.IView
-    interface IModule : BaseActivityMVPContract.IModule
+    abstract class IModule : BaseActivityMVPContract.IModule()
     abstract class IPresenter(view: IView, module: IModule) :
         BaseActivityMVPContract.IPresenter<IView, IModule>(view, module) {
 

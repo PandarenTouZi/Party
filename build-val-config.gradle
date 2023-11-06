@@ -13,8 +13,8 @@ ext {
            android_junit          : "1.1.5",/*junit-androidTest*/
            app_code               : 1,/*app*/
            app_name               : "1.0.0.0",/*app*/
-           library_base_code      : 1,/*base*/
-           library_base_name      : "1.0.0",/*base*/
+           library_base_code      : 3,/*base*/
+           library_base_name      : "1.0.2",/*base*/
            library_utils_code     : 1,/*utils*/
            library_utils_name     : "1.0.0",/*utils*/
            library_view_code      : 1,/*view*/
