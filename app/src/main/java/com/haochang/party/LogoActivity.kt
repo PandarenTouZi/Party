@@ -20,6 +20,7 @@ import com.haochang.party.image.MainImageActivity
 import com.haochang.party.network.MainNetworkActivity
 import com.haochang.party.permission.MainPermissionActivity
 import com.haochang.party.utils.MainUtilsActivity
+import com.haochang.party.video.MainVideoMVPActivity
 import com.haochang.party.view.MainViewsActivity
 
 /**
@@ -50,6 +51,7 @@ class LogoActivity : BaseActivityMVPActivity<AbsMVPContract.IPresenter<*, *>>() 
     override fun provideContentView(): View {
         val functionList = arrayListOf(
             ItemEntity("音频", MainAudioMVPActivity::class.java),
+            ItemEntity("视频", MainVideoMVPActivity::class.java),
             ItemEntity("网络", MainNetworkActivity::class.java),
             ItemEntity("权限", MainPermissionActivity::class.java),
             ItemEntity("页面视图", MainMVPActivity::class.java),

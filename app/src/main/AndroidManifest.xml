@@ -28,5 +28,6 @@
         <activity android:name=".view.scroll.ScrollTwoPageActivity" />
         <activity android:name=".gles.learn.LearnOpenGLESActivity" />
         <activity android:name=".audio.MainAudioMVPActivity" />
+        <activity android:name=".video.MainVideoMVPActivity" />
     </application>
 </manifest>
