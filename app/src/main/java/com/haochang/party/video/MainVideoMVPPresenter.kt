@@ -8,7 +8,7 @@ import com.haochang.base.framework.mvp.activity.BaseActivityMVPContract
  */
 class MainVideoMVPPresenter(
     view: BaseActivityMVPContract.IView,
-    model: BaseActivityMVPContract.IModule
+    model: BaseActivityMVPContract.IModel
 ) : MainVideoMVPContract.IPresenter(
     view, model
 ) {

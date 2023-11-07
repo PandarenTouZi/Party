@@ -5,7 +5,7 @@ package com.haochang.party.network
  * @createTime: 2021/6/8
  */
 class MainNetworkPresenter(view: MainNetworkContract.IView,
-                           module: MainNetworkContract.IModule
+                           module: MainNetworkContract.IModel
 ) : MainNetworkContract.IPresenter(view, module) {
     override fun onViewCreate() {
     }

@@ -15,7 +15,7 @@ class MainNetworkActivity : BaseActivityMVPActivity<MainNetworkPresenter>(),
     }
 
     override fun onInitMVPContract(): MainNetworkPresenter {
-        return MainNetworkPresenter(this, MainNetworkModule())
+        return MainNetworkPresenter(this, MainNetworkModel())
     }
 
     override fun onInitView(rootView: View) {

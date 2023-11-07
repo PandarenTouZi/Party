@@ -1,15 +1,19 @@
 package com.haochang.party.audio
 
-import com.haochang.base.framework.mvp.activity.BaseActivityMVPContract
-
 /**
  * author:pandaren
  * createDate:2023/11/6 17:33
  */
 class MainAudioMVPPresenter(
-    view: BaseActivityMVPContract.IView,
-    model: BaseActivityMVPContract.IModule
+    view: MainAudioMVPContract.IView,
+    model: MainAudioMVPContract.IModel
 ) : MainAudioMVPContract.IPresenter(
     view, model
 ) {
+    override fun startPlayRawAudio() {
+        mModule.stopAllPlayers()
+        mModule.startPlayRawAudio(object : MainAudioMVPContract.IModel.IRawAudioPlayerListener {
+
+        })
+    }
 }

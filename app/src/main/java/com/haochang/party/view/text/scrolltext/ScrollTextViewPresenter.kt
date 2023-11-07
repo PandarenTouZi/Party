@@ -5,7 +5,7 @@ package com.haochang.party.view.text.scrolltext
  * @createTime: 2021/6/22
  */
 class ScrollTextViewPresenter(view: ScrollTextViewContract.IView,
-                              module: ScrollTextViewContract.IModule
+                              module: ScrollTextViewContract.IModel
 ) : ScrollTextViewContract.IPresenter(
     view, module
 ) {

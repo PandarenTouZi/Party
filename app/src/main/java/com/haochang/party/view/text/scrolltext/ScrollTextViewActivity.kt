@@ -12,7 +12,7 @@ class ScrollTextViewActivity : BaseActivityMVPActivity<ScrollTextViewPresenter>(
     ScrollTextViewContract.IView {
 
     override fun onInitMVPContract(): ScrollTextViewPresenter {
-        return ScrollTextViewPresenter(this, ScrollTextViewModule())
+        return ScrollTextViewPresenter(this, ScrollTextViewModel())
     }
 
     override fun provideLayoutId(): Int {

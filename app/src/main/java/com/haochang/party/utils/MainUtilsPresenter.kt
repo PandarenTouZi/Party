@@ -5,7 +5,7 @@ package com.haochang.party.utils
  * @createTime: 2021/6/8
  */
 class MainUtilsPresenter(view: MainUtilsContract.IView,
-                         module: MainUtilsContract.IModule
+                         module: MainUtilsContract.IModel
 ) : MainUtilsContract.IPresenter(view, module) {
     override fun onViewCreate() {
         

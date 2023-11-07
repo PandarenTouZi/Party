@@ -1,14 +1,15 @@
-package com.haochang.party.network
+package com.haochang.party.utils
 
 /**
  * @author: pandaren
  * @createTime: 2021/6/8
  */
-class MainNetworkModule: MainNetworkContract.IModule() {
+class MainUtilsModel: MainUtilsContract.IModel() {
     override fun onCreated() {
-
+        
     }
 
     override fun onDestroy() {
+        
     }
 }

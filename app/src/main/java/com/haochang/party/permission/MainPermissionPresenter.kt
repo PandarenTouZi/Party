@@ -5,7 +5,7 @@ package com.haochang.party.permission
  * @createTime: 2021/6/8
  */
 class MainPermissionPresenter(view: MainPermissionContract.IView,
-                              module: MainPermissionContract.IModule
+                              module: MainPermissionContract.IModel
 ) : MainPermissionContract.IPresenter(
     view, module
 ) {

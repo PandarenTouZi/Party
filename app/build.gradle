@@ -45,7 +45,6 @@ dependencies {
     implementation "com.google.android.material:material:${rootProject.ext.ver.android_material}"
     implementation project(':base')
 //    implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base_name}"
-//    println("======================== ${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_base}:${rootProject.ext.ver.library_base_name}")
 
 //    implementation project(':utils')
     implementation "${rootProject.ext.groupName.library}:${rootProject.ext.packageName.library_utils}:${rootProject.ext.ver.library_utils_name}"

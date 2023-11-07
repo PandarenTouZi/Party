@@ -7,13 +7,25 @@ import com.haochang.base.framework.mvp.activity.BaseActivityMVPContract
  * createDate:2023/11/6 16:47
  */
 interface MainAudioMVPContract {
-    abstract class IModel : BaseActivityMVPContract.IModule()
+    abstract class IModel : BaseActivityMVPContract.IModel() {
 
-    interface IView : BaseActivityMVPContract.IView
+        abstract fun stopAllPlayers()
+        interface IRawAudioPlayerListener {
+            fun onError(msg: String)
 
-    abstract class IPresenter(view: BaseActivityMVPContract.IView,
-                              model: BaseActivityMVPContract.IModule
+        }
+        abstract fun startPlayRawAudio(listener: IRawAudioPlayerListener)
+
+    }
+
+    interface IView : BaseActivityMVPContract.IView {}
+
+    abstract class IPresenter(
+        view: IView,
+        model: IModel
     ) : BaseActivityMVPContract.IPresenter<IView, IModel>(
         view, model
-    )
+    ) {
+        abstract fun startPlayRawAudio()
+    }
 }

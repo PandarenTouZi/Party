@@ -6,7 +6,7 @@ package com.haochang.party.gles
  */
 class MainOpenGLESPresenter(
     view: MainOpenGLESContract.IView,
-    module: MainOpenGLESContract.IModule
+    module: MainOpenGLESContract.IModel
 ) : MainOpenGLESContract.IPresenter(view, module) {
     override fun onViewCreate() {
     }

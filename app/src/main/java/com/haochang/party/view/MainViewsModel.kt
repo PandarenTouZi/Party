@@ -1,10 +1,10 @@
-package com.haochang.party.utils
+package com.haochang.party.view
 
 /**
  * @author: pandaren
  * @createTime: 2021/6/8
  */
-class MainUtilsModule: MainUtilsContract.IModule() {
+class MainViewsModel: MainViewsContract.IModel() {
     override fun onCreated() {
         
     }

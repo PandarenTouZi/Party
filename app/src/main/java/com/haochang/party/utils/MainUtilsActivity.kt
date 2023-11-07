@@ -14,7 +14,7 @@ class MainUtilsActivity : BaseActivityMVPActivity<MainUtilsPresenter>(), MainUti
     }
 
     override fun onInitMVPContract(): MainUtilsPresenter {
-        return MainUtilsPresenter(this, MainUtilsModule())
+        return MainUtilsPresenter(this, MainUtilsModel())
     }
 
     override fun onInitView(rootView: View) {

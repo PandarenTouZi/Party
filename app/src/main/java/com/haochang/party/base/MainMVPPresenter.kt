@@ -5,7 +5,7 @@ package com.haochang.party.base
  * @createTime: 2021/6/8
  */
 class MainMVPPresenter(view: MainMVPContract.IView,
-                       module: MainMVPContract.IModule
+                       module: MainMVPContract.IModel
 ) : MainMVPContract.IPresenter(view, module) {
 
     override fun onViewCreate() {

@@ -14,7 +14,7 @@ class MainImageActivity : BaseActivityMVPActivity<MainImagePresenter>(), MainIma
     }
 
     override fun onInitMVPContract(): MainImagePresenter {
-        return MainImagePresenter(this, MainImageModule())
+        return MainImagePresenter(this, MainImageModel())
     }
 
     override fun onInitView(rootView: View) {

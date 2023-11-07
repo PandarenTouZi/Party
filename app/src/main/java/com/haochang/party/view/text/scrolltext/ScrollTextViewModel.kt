@@ -4,7 +4,7 @@ package com.haochang.party.view.text.scrolltext
  * @author: pandaren
  * @createTime: 2021/6/22
  */
-class ScrollTextViewModule : ScrollTextViewContract.IModule() {
+class ScrollTextViewModel : ScrollTextViewContract.IModel() {
     override fun onCreated() {
 
     }

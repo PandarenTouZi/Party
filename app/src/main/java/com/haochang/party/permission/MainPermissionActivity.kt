@@ -15,7 +15,7 @@ class MainPermissionActivity : BaseActivityMVPActivity<MainPermissionPresenter>(
     }
 
     override fun onInitMVPContract(): MainPermissionPresenter {
-        return MainPermissionPresenter(this, MainPermissionModule())
+        return MainPermissionPresenter(this, MainPermissionModel())
     }
 
     override fun onInitView(rootView: View) {

@@ -1,10 +1,10 @@
-package com.haochang.party.image
+package com.haochang.party.network
 
 /**
  * @author: pandaren
  * @createTime: 2021/6/8
  */
-class MainImageModule: MainImageContract.IModule() {
+class MainNetworkModel: MainNetworkContract.IModel() {
     override fun onCreated() {
 
     }

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Party</string>
+    <string name="audio_local_raw">本地raw资源</string>
 </resources>

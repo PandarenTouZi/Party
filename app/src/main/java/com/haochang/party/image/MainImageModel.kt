@@ -1,10 +1,10 @@
-package com.haochang.party.base
+package com.haochang.party.image
 
 /**
  * @author: pandaren
  * @createTime: 2021/6/8
  */
-class MainMVPModule: MainMVPContract.IModule() {
+class MainImageModel: MainImageContract.IModel() {
     override fun onCreated() {
 
     }

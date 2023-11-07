@@ -7,8 +7,8 @@ import com.haochang.base.framework.mvp.activity.BaseActivityMVPContract
  * @createTime: 2021/6/22
  */
 class ScrollTextViewContract : BaseActivityMVPContract {
-    abstract class IModule : BaseActivityMVPContract.IModule() {}
+    abstract class IModel : BaseActivityMVPContract.IModel() {}
     interface IView : BaseActivityMVPContract.IView {}
-    abstract class IPresenter(view: IView, module: IModule) :
-        BaseActivityMVPContract.IPresenter<IView, IModule>(view, module) {}
+    abstract class IPresenter(view: IView, module: IModel) :
+        BaseActivityMVPContract.IPresenter<IView, IModel>(view, module) {}
 }

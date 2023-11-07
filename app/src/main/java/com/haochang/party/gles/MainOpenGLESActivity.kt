@@ -55,6 +55,6 @@ class MainOpenGLESActivity : BaseActivityMVPActivity<MainOpenGLESPresenter>(),
     }
 
     override fun onInitMVPContract(): MainOpenGLESPresenter {
-        return MainOpenGLESPresenter(this, MainOpenGLESModule())
+        return MainOpenGLESPresenter(this, MainOpenGLESModel())
     }
 }
